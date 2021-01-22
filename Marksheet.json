@@ -1,0 +1,65 @@
+package college;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+public class Marksheet
+{
+public static void main(String args[])
+{	
+List<Object> stu= new ArrayList<>();
+Student st1= new Student();
+st1.setRegID(430718);
+st1.setName("Tajamul Hussain");
+st1.setSubject("Mathematics");
+st1.setSubject("Computer Science");
+st1.setSubject("Accounts");
+st1.setSubject("RDBMS");
+st1.setSubject("Accounts");
+st1.setMarks(56);
+
+Student st2= new Student();
+st2.setRegID(430889);
+st2.setName("Madhusri");
+st2.setSubject("Mathematics");
+st2.setSubject("Computer Science");
+st2.setSubject("Accounts");
+st2.setSubject("RDBMS");
+st2.setSubject("Accounts");
+st2.setMarks(66);
+
+Student st3= new Student();
+st3.setRegID(410702);
+st3.setName("Mehvish");
+st3.setSubject("Mathematics");
+st3.setSubject("Computer Science");
+st3.setSubject("Accounts");
+st3.setSubject("RDBMS");
+st3.setSubject("Accounts");
+st3.setMarks(76);
+
+Student st4= new Student();
+st4.setRegID(430129);
+st4.setName("Aravind");
+st4.setSubject("Mathematics");
+st4.setSubject("Computer Science");
+st4.setSubject("Accounts");
+st4.setSubject("RDBMS");
+st4.setSubject("Accounts");
+st4.setMarks(89);
+
+stu.add(st1);
+stu.add(st2);
+stu.add(st3);
+stu.add(st4);
+
+ListIterator listItr =(ListIterator)stu.listIterator();
+
+while(listItr.hasNext()){
+Student stud =(Student)listItr.next();
+System.out.println("|Name =" +stud.getName() + "| RegID ="+stud.getRegID() + "| Subject ="+stud.getSubject() + "| Marks ="+stud.getMarks()  );
+}
+}
+}
+

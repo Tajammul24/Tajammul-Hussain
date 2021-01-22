@@ -1,0 +1,38 @@
+package college;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student 
+{
+	private int RegID;
+	private String Name;
+	private String Subject;
+	private int Marks;
+	
+	public int getRegID() {
+		return RegID;
+	}
+	public void setRegID(int regID) {
+		RegID = regID;
+	}
+	public String getName() {
+		return Name;
+	}
+	public void setName(String name) {
+		Name = name;
+	}
+	public String getSubject() {
+		return Subject;
+	}
+	public void setSubject(String subject) {
+		Subject = subject;
+	}
+	public int getMarks() {
+		return Marks;
+	}
+	public void setMarks(int marks) {
+		Marks = marks;
+	}
+}
+
